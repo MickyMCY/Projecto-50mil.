@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projecto 100mil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="intro">
+    <h1>Aqui vais fazer <span class="destaque">50.000MT</span> estando em casa com apenas <span class="destaque">500MT</span></h1>
+    <p>Começa hoje mesmo a mudar a tua vida sem sair do sofá. Tudo o que precisas é de 500MT e um telefone com internet.</p>
+  </section>
+
+  <section class="pagamento">
+    <h2>📱 Pagamento Manual via M-Pesa</h2>
+    <p><strong>Valor:</strong> <span class="preco">500MT</span></p>
+    <p><strong>Número:</strong> <span class="numero">+258 84 459 817</span></p>
+    <p>1️⃣ Copia o número acima<br>2️⃣ Faz o pagamento via M-Pesa<br>3️⃣ Clica no botão abaixo</p>
+    <a href="processando.html" class="botao">✅ Pagamento feito</a>
+  </section>
+
+  <section class="contador">
+    <h3>⚠️ Vagas limitadas!</h3>
+    <p>Só restam <span id="vagas">2</span> vagas!</p>
+  </section>
+
+  <script>
+    let vagas = 2;
+    setInterval(() => {
+      if (vagas > 1) {
+        vagas--;
+        document.getElementById("vagas").innerText = vagas;
+      }
+    }, 8000);
+  </script>
+</body>
+</html>
